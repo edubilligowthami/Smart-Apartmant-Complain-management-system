@@ -1,0 +1,64 @@
+# 🏢 Apartment Complaint Management System - Explanation
+
+## 📌 Project Overview
+This project is a web-based complaint management system developed using Streamlit. It allows tenants to raise complaints and enables owners to manage and resolve them efficiently.
+
+---
+
+## 🎯 Problem Statement
+In many apartments, complaints are not properly tracked, leading to delays and confusion. There is no centralized system to monitor complaint status.
+
+---
+
+## 💡 Solution
+This system provides a platform where:
+- Tenants can submit complaints
+- Owners can track and resolve issues
+- Complaint status is updated in real-time
+- Notifications are generated for important actions
+
+---
+
+## ⚙️ Technologies Used
+- Python – Backend logic
+- Streamlit – User Interface
+- SQLite – Database
+- Pandas – Data processing
+- Plotly – Data visualization
+
+---
+
+## 🔄 Workflow
+
+1. Tenant submits a complaint
+2. Complaint is stored in SQLite database
+3. Owner views complaint in dashboard
+4. Owner updates status (Pending → In Progress → Resolved)
+5. System displays notification
+6. Data updates in analytics dashboard
+
+---
+
+## ✨ Key Features
+- Complaint submission with image upload
+- Flat and block-based tracking
+- Automatic priority detection
+- Status updates and notifications
+- Overdue alerts
+- Analytics dashboard
+- Average resolution time calculation
+
+---
+
+## 📊 Output
+- Clear complaint tracking
+- Faster issue resolution
+- Visual insights using charts
+
+---
+
+## 🚀 Future Improvements
+- User authentication system
+- Email/SMS notifications
+- Cloud database integration
+- Mobile application support
