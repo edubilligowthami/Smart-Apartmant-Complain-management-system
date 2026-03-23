@@ -1,0 +1,11 @@
+streamlit
+pandas
+plotly 
+
+
+
+how they are used ?
+
+streamlit → for UI
+pandas → for data handling
+plotly → for charts
