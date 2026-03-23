@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.express as px
 
 st.set_page_config(page_title="Apartment Complaint System", layout="wide")
-st.title("🏢 Apartment Complaint Management System")
+st.title(" Apartment Complaint Management System")
 
 # -------------------- DATABASE SETUP --------------------
 conn = sqlite3.connect("complaints.db", check_same_thread=False)
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS complaints (
 conn.commit()
 
 # -------------------- TENANT FORM --------------------
-st.header("📝 Tenant: Raise a Complaint")
+st.header(" Tenant: Raise a Complaint")
 with st.form("complaint_form"):
     title = st.text_input("Complaint Title")
     description = st.text_area("Description")
@@ -70,7 +70,7 @@ with st.form("complaint_form"):
             """, (title, description, flat_no, block, image_path, status, priority, created_at, deadline_at))
             conn.commit()
 
-            st.success("✅ Complaint submitted successfully!")
+            st.success(" Complaint submitted successfully!")
             st.info(f"🔔 New complaint from Flat {flat_no}: '{title}'")
 
 # -------------------- OWNER DASHBOARD --------------------
@@ -141,7 +141,7 @@ for idx, row in flat_blocks.iterrows():
                     st.info(f"📨 Tenant Notification: '{c['title']}' from Flat {c['flat_no']} resolved")
                     st.info(f"🔔 Owner Alert: Complaint {c['id']} closed")
 
-                    # 🎉 UI effect
+                    #  UI effect
                     st.balloons()
 
                     # 🔄 Refresh UI
